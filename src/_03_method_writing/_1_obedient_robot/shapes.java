@@ -7,7 +7,6 @@ public class shapes {
 
 	public static void main(String[] args) {
 		
-		Robot q = new Robot();
 		
 		int shape = JOptionPane.showOptionDialog(null, "what shape do you want", " ", 0,
 		JOptionPane.INFORMATION_MESSAGE, null, new String[] { "square", "triangle", "circle"}, null);
@@ -15,6 +14,18 @@ public class shapes {
 		int color =JOptionPane.showOptionDialog(null, "what color do you want", " ", 0,
 		JOptionPane.INFORMATION_MESSAGE, null, new String[] { "red", "blue", "yellow", "green"}, null);
 		
+		if(color==0) {
+			q.setPenColor(215, 59, 71);
+		}
+		if(color==1) {
+			q.setPenColor(95, 169, 221);
+		}
+		if(color==2) {
+			q.setPenColor(185, 179, 61);
+		}
+		if(color==3) {
+			q.setPenColor(175, 209, 141);
+		}
 		if(shape==0) {
 			drawSquare();
 		}
@@ -23,18 +34,6 @@ public class shapes {
 		}
 		if(shape==2) {
 			drawCircle();
-		}
-		if(color==0) {
-			q.setPenColor(215, 129, 21);
-		}
-		if(color==1) {
-			
-		}
-		if(color==2) {
-	
-		}
-		if(color==3) {
-	
 		}
 	} 
 	
