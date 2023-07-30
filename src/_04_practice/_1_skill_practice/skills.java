@@ -70,18 +70,24 @@ public class skills {
 		// Create a variable - cars - and initialize it to the number of cars your family has. 
 			int cars = 2;
 		// If there are 0 cars, use a pop-up to display, "I bet you use public transportation."
-			
+			if(cars==0) {
+				JOptionPane.showMessageDialog(null, "i bet you use public transportation");
+			}
 		// If there is 1 car, use a pop-up to display the make/model of the car
-
+			if(cars==1) {
+				JOptionPane.showMessageDialog(null, "you have a car");
+			}
 		// If there is more than 1 car, use a pop-up to display how many wheels the cars have between them.
-
+			if(cars>=2) {
+				int wheels = cars*=4;
+				JOptionPane.showMessageDialog(null, "your cars have a total of " +wheels +" wheels");
+			}
 		}
 
 		void skill5() { // In a pop-up, ask the user for the name of their school
 			String s = JOptionPane.showInputDialog("what school do you go to");
-			int school = Integer.parseInt(s);
 		// In another pop-up, tell the user, that their school is a fantastic school. 
-			JOptionPane.showMessageDialog(null, school);
+			JOptionPane.showMessageDialog(null, s +" is a fantastic school");
 		// You must include the name of the school in the message.
 
 		}
