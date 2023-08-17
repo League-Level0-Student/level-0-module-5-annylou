@@ -59,11 +59,10 @@ public class AmazingRings extends PApplet {
     	int ring = 0;
     	  int a = 105;
     	  int b = 105;
-    	  int x;
-    	  int speed;
+    	 
     	  
     	  
-    	  for(ring=15; ring>0; ring--) {
+    	  for(ring=29; ring>0; ring--) {
     	  
     	    ellipse(200,125, a,b);
     	    a-=7;

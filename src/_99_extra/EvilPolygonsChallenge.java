@@ -18,7 +18,7 @@ public class EvilPolygonsChallenge {
 		
 		//3. Use if statements to check the the value of colorChoice and set the pen color accordingly 
 		if(colorChoice==0) {
-			j.setPenColor(255,0,0);
+			j.setPenColor(215,77,67);
 		}
 		if(colorChoice==1) {
 			j.setPenColor(0,0,0);

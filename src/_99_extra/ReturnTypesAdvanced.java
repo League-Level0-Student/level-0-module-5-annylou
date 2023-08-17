@@ -38,7 +38,7 @@ public class ReturnTypesAdvanced {
 		rob.setSpeed(100);
 		rob.penDown();
 		for(int i = 0; i < numSides; i++) {
-			rob.move(100);
+			rob.move(25);
 			rob.turn(degrees);
 		}
 		rob.hide();
